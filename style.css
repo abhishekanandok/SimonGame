@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 2rem;
+    transition: all ease 0.2s;
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.yellow {
+    background-color: rgba(198, 198, 74, 0.806);
+}
+
+.red {
+    background-color: rgba(186, 75, 75, 0.82);
+}
+
+.purple {
+    background-color: rgba(189, 87, 189, 0.811);
+}
+
+.green {
+    background-color: rgba(91, 192, 91, 0.801);
+}
+
+.flash {
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.906);
+}
