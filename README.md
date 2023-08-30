@@ -35,11 +35,11 @@ The Simon Game is a classic memory game where players need to follow a sequence 
 ## Acknowledgements
 
 - This project was inspired by the classic Simon Game.
-- Special thanks to [Your Name](https://github.com/abhishekanandok) for creating this game.
+- Special thanks to [Abhishek Anand](https://github.com/abhishekanandok) for creating this game.
 
 ## Contact
 
-For any inquiries or feedback, please reach out to [Your Email](mailto:abhishekanandok@email.com).
+For any inquiries or feedback, please reach out to [Email](mailto:abhishekanandok@email.com).
 
 ## License
 
