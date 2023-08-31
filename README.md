@@ -1,6 +1,7 @@
 # Simon Game
 
-![image](https://github.com/abhishekanandok/SimonGame/assets/112304737/404ec45e-8405-4130-8b56-5f9c28b9aaf3)
+![image](https://github.com/abhishekanandok/SimonGame/assets/112304737/6eb5e675-eae4-41c2-8e3d-52de1dd47ce7)
+
 
 
 The Simon Game is a classic memory game where players need to follow a sequence of lights and sounds in the correct order. This project was created using HTML, CSS, and JavaScript.
