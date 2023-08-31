@@ -63,6 +63,16 @@ button:hover{
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.906);
 }
 
+#para{
+    font-weight: 900;
+    font-size: x-large;
+}
+
+a{
+    text-shadow: 2px 2px 3px #56020291;
+    font-size: xx-large;
+}
+
 
 
 
