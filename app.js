@@ -22,13 +22,19 @@ startBtn.addEventListener("click", function () {
 
 //restart button
 function reStart() {
-    let reStartBtn = document.createElement("button");
+    reStartBtn = document.createElement("button");
     reStartBtn.innerText = "ReStart Game";
     reStartBtn.classList.add("reStart");
 
     h2.appendChild(reStartBtn);
-    reStartBtn.addEventListener("click", reset);
-};
+
+    // Add a click event listener
+    reStartBtn.addEventListener("click", function () {
+        reset();
+
+        started = true;
+        levelUp();
+    })};
 
 
 //keyboard press for start game
@@ -37,7 +43,7 @@ document.addEventListener("keypress", function () {
         started = true;
 
         levelUp();
-    }
+    };
 });
 
 function btnFlash(btn) {
@@ -64,6 +70,10 @@ function levelUp() {
     let randBtn = document.querySelector(`.${randColor}`);
     btnFlash(randBtn);
 
+    // audio
+    var audio = document.getElementById("gameFlash");
+    audio.play();
+
     gameSeq.push(randColor);// random color pushing in array
     h3.innerText = `Your higest score is : ${highScore(level)} .`;
 };
@@ -77,6 +87,11 @@ function checkAns(idx) {
     } else {
         h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br>Press any key to start. or `;
         reStart();
+
+        // audio
+        var audio = document.getElementById("warn");
+        audio.play();
+
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function () {
             document.querySelector("body").style.backgroundColor = "white";
@@ -88,6 +103,10 @@ function checkAns(idx) {
 function btnPress() {
     let btn = this;
     btnFlash(btn);
+
+    // audio
+    var audio = document.getElementById("divBtn");
+    audio.play();
 
     userColor = btn.getAttribute("id");
     userSeq.push(userColor);//store user colour by id name in array
